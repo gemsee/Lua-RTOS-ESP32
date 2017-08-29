@@ -118,10 +118,10 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
    
    ```lua
    Please, enter your board type:
-     1: WHITECAT N1
-     2: ESP32 CORE BOARD
-     3: ESP32 THING
-     4: GENERIC
+     1: WHITECAT N1 -- whitecat
+     2: ESP32 CORE BOARD -- dev board (core board v2 ?)
+     3: ESP32 THING -- the red board
+     4: GENERIC -- esp32 production board?
 
    Type: 
    ```
@@ -167,12 +167,12 @@ In our [wiki](https://github.com/whitecatboard/Lua-RTOS-ESP32/wiki) you have mor
 
 1. Set the default configuration for your board:
 
-   | Board              | Run this command                                     |
-   |--------------------|------------------------------------------------------|
-   | WHITECAT ESP32 N1  | make SDKCONFIG_DEFAULTS=WHITECAT-ESP32-N1 defconfig  |
-   | ESP32 CORE         | make SDKCONFIG_DEFAULTS=ESP32-CORE-BOARD defconfig   |
-   | ESP32 THING        | make SDKCONFIG_DEFAULTS=ESP32-THING defconfig        |
-   | GENERIC            | make SDKCONFIG_DEFAULTS=GENERIC defconfig            |
+   | Board                              | Run this command                                     |
+   |------------------------------------|------------------------------------------------------|
+   | WHITECAT ESP32 N1                  | make SDKCONFIG_DEFAULTS=WHITECAT-ESP32-N1 defconfig  |
+   | ESP32 CORE -- dev board v2?        | make SDKCONFIG_DEFAULTS=ESP32-CORE-BOARD defconfig   |
+   | ESP32 THING -- red board           | make SDKCONFIG_DEFAULTS=ESP32-THING defconfig        |
+   | GENERIC -- production board?       | make SDKCONFIG_DEFAULTS=GENERIC defconfig            |
 
 1. Change the default configuration:
 
